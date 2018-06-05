@@ -1,13 +1,14 @@
 <html>
 <body>
-    <form method="get" action="2.php">
+    <form method="post" action="4.php">
         id :  <input type="text" name="id" />
         password :  <input type="text" name="password" />
        
         <input type="submit" />
     </form>
-    <?php
-    echo $_GET['id'].','.$_GET['password'];
-    ?>
 </body>
 </html>
+
+<?php
+echo $_POST['id'].','.$_POST['password'];
+?>
